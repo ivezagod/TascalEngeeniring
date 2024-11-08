@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.active-nav {
+    background-color: #9ca3af; /* Your desired background color */
+}
+#navbar {
+    background-color: transparent;
+    transition: background-color 0.7s ease-in-out, padding-top 0.7s ease-in-out;
+    width: 100%;
+}
+
+#navbar img {
+    padding-top: 30px; /* Initial value */
+    transition: padding-top 0.7s ease-in-out;
+}
+
+#navbar ul {
+    padding-top: 60px; /* Initial value */
+    transition: padding-top 0.7s ease-in-out;
+}
+
+#navbar.scrolled {
+    background-color: #192436;
+}
+
+#navbar.scrolled img {
+    padding-top: 0;
+}
+
+#navbar.scrolled ul {
+    padding-top: 0;
+}
+
+
+
+
+
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 3s ease, left 2s ease;
+}
+
+.words {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+.circle.show {
+    left: 50%;
+    opacity: 1;
+}
+
+/* Default styling for ENG/SRB link */
+.lang-toggle {
+    color: white;
+}
+
+/* Styling for active ENG link */
+#navbar .active,
+#burgerDropDown .active {
+    color: blue;
+}
+.slider-wrapper {
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    animation: slide-left 8s linear infinite;
+}
+
+.slider img {
+    margin-right: 20px;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
+    }
+}
+
+
+.slider-wrapper2{
+    width: 100%;
+
+}
+
+.slider-container2 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider2 img {
+    margin-right: 20px;
+    animation: slide-left 2s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
+    }
+}
+
+.custom-border {
+    border-width: 12px; /* Adjust the width as needed */
+}
+
+.dotted-background {
+    background-color: #192436; /* Base color */
+    background-image: radial-gradient(#486ba3 10%, transparent 10%);
+    background-size: 5px 5px; /* Size of each dot */
+    background-position: center;
+    width: 100%;
+    height: 100%; /* Full height */
+}
+
+.pagination-link {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #486BA3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.pagination-link.active {
+    background-color: #fff;
+    color: #486BA3;
+}
+
+.reference-size{
+    font-size: 24px;
+}
+
+@media (max-width: 800px) {
+    .reference-size {
+        font-size: 48px;
+    }
+}
+
+.border-container {
+    position: relative;
+    display: inline-block;
+}
+
+.border-image {
+    display: block;
+    position: relative;
+    z-index: 1; /* Ensure the image is above the border */
+}
+
+.border-container::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    right: -80px;
+    bottom: 80px;
+    border: 10px solid #B0B0B0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0; /* Ensure the border is below the image */
+}
+
+.border-container:hover::before {
+    transform: translate(-100px, 80px);
+}
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tascal</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/media/logo/SmallLogoLightGradient@4x.png">
+
+</head>
+<body class="bg-[#192436] font-main">
+<nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/index.html">
+            <img src="/media/logo/Tascal-Logo@4x.png" alt="Tascal Logo" width="200" height="70" class="cursor-pointer">
+        </a>
+        <ul class="text-white text-sm  gap-[30px] justify-end  items-center hidden xl:flex">
+            <li class="p-2 mr-[50px] bg-[#486BA3] hover:bg-white hover:text-[#486BA3]"><a href="https://dbstudio.rs/tascal/flajer/">BROCHURE</a></li>
+            <li class="hover:text-[#486BA3]"><a  href="index.html">HOME</a></li>
+            <li class="hover:text-[#486BA3]"><a href="about.html">ABOUT US</a></li>
+            <li class="relative hover:text-[#486BA3]">
+                <p class="cursor-pointer flex items-center"  id="servicesLink">SERVICES<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </p>
+                <div id="servicesDropdown" class="hidden absolute right-[40px] bg-[#486BA3] rounded-md shadow-lg mt-2  w-[300px]">
+                    <a href="consulting.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+                    <a href="electricalSystemDesign.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+                    <a href="programing.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+                    <a href="commissioning&StartUp.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+                    <a href="installation.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+                    <a href="controlPanelsProduction.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+                    <a href="maintenance.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+                </div>
+            </li>
+            <li class="hover:text-[#486BA3]"><a href="references.html">REFERENCES</a></li>
+            <li class="hover:text-[#486BA3]"><a href="contact.html">CONTACT</a></li>
+            <li class="hover:text-[#486BA3]"><a href="gallery.html">GALLERY</a></li>
+            <div class="flex gap-[3px]">
+                <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5" id="engLink">ENG</a></li>
+                <span>/</span>
+                <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5" id="srbLink">MNE</a></li>
+            </div>
+
+
+        </ul>
+        <div class=" relative xl:hidden block text-white  text-3xl cursor-pointer">
+            <svg id="burgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-9 h-9">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+            <div id="burgerDropDown" class="hidden absolute bg-[#2e4368] right-0 left-[-840px] flex flex-col rounded-md shadow-lg mt-[40px] w-screen ">
+                <a class="hover:text-white p-10" href="https://dbstudio.rs/tascal/flajer/">BROCHURE</a>
+                <a class="hover:text-white p-10" href="index.html">HOME</a>
+                <a class="hover:text-white p-10" href="about.html">ABOUT US</a>
+                <span>
+    <p class=" p-10 cursor-pointer flex items-center relative hover:text-white" id="burgerServicesLink">SERVICES
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+    </p>
+    <div id="burgerServicesDropdown" class="bg-[#486BA3]   mt-2 ">
+      <a href="consulting.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+      <a href="electricalSystemDesign.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+      <a href="programing.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+      <a href="commissioning&StartUp.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+      <a href="installation.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+      <a href="controlPanelsProduction.html" class="block p-10 text-white hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+      <a href="maintenance.html" class=" block p-10  text-white hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+    </div>
+  </span>
+                <a class="hover:text-white p-10 " href="references.html">REFERENCES</a>
+                <a class="hover:text-white p-10 " href="contact.html">CONTACT</a>
+                <a class="hover:text-white p-10 " href="gallery.html">GALLERY</a>
+                <div class="flex gap-[3px] p-10">
+                   <a class="flex items-center hover:text-[#486BA3]" href="#section5" id="engBurgerLink">ENG</a>
+                    <span>/</span>
+                <a class="flex items-center hover:text-[#486BA3] active:text-[#486BA3]" href="#section5" id="srbBurgerLink">MNE</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="bg-[url('/media/Random/slika.png')] bg-center bg-cover bg-no-repeat h-screen w-screen flex items-center justify-center relative">
+    <div id="section1" class="circle bg-white/10 rounded-full w-[500px] h-[500px] aspect-w-1 aspect-h-1 absolute"></div>
+    <div class="flex flex-col text-white items-center justify-center relative z-10 words font-extrabold">
+        <div class="flex items-center mb-[30px]">
+            <h2 class="text-7xl">TASCAL</h2>
+            <img src="/media/logo/SmallLogoLightGradient@4x.png" alt="" width="23px" height="68px" class="mb-8 ml-2">
+            <h2 class="text-7xl ml-5">ENGINEERING</h2>
+        </div>
+        <a href="about.html" class="bg-[#486BA3] text-white font-bold py-4 px-10  hover:bg-blue-700 transition-colors">
+            ABOUT US
+        </a>
+    </div>
+</div>
+
+
+<main class="   mx-auto max-w-picture">
+
+
+
+
+
+    <div class="xl:flex-row flex flex-col items-center xl:items-start justify-center w-full text-white mt-[100px]">
+        <div class="xl:w-1/2 w-full">
+            <p class="flex text-4xl xl:text-lg mb-[5px] text-[#D5E9FE]">
+                WELCOME TO TASCAL
+                <span>
+                <img class="mr-[10px]" src="/media/logo/SmallLogoLightGradient@4x.png" alt="" width="10" height="18">
+            </span>
+                ENGINEERING
+            </p>
+            <div class="flex items-center gap-[120px]">
+                <h1 class="text-7xl xl:text-5xl font-bold w-full">About Us</h1>
+                <div class="line bg-white w-[185px] h-[3px]"></div>
+            </div>
+            <div class="line bg-white w-[55px] h-[3px] mt-[30px] mb-[70px]"></div>
+            <div class="w-[400px] h-[30px]">
+                <img src="/media/logo/Tascal-Logo-OneLiner@4x.png" alt="" class="w-full h-full">
+            </div>
+            <p class="pt-[50px] text-4xl xl:text-base xl:leading-loose leading-loose mr-[10px]">
+                TASCAL ENGINEERING is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.
+            </p>
+            <p class="pt-[50px] text-4xl xl:text-base xl:leading-loose leading-loose">
+                We are registered for production and have our own plant for the production of all types of low-voltage switchgear, metering-distribution and specific technological, control management cabinets (DDC, MCC).
+            </p>
+            <div class="pt-[20px] w-[300px] text-white hover:text-[#486BA3] underline underline-offset-8 xl:pb-0 pb-[50px]">
+                <a href="about.html">
+                    <p class="text-white hover:text-[#486BA3] text-3xl xl:text-base">MORE ABOUT US</p>
+                </a>
+            </div>
+        </div>
+        <div class="xl:w-1/2 w-full h-[550px] flex justify-center items-center relative my-[50px] xl:my-0">
+            <div class="relative border-container ">
+                <img src="./media/home/service_p.png" alt="" class="mt-[50px] border-image ">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="flex items-center justify-evenly  w-full dotted-background mt-[100px] py-[65px]">
+        <div class="flex flex-col items-center ">
+            <div class="w-[222px] h-[242px]">
+                <img src="./media/home/2014A.png" alt="" class="w-full h-full">
+            </div>
+            <p class="text-white text-5xl font-extrabold">2014</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="w-[222px] h-[242px]">
+                <img src="./media/home/2015A.png" alt="" class="w-full h-full">
+            </div>
+            <p class="text-white text-5xl font-extrabold">2015</p>
+        </div>
+
+    </div>
+
+    <div class="mt-[100px]  ">
+        <h2 class="text-5xl font-bold  xl:ml-0 text-white mb-[50px]">OUR SERVICES</h2>
+
+        <div class="flex-col flex xl:flex-row max-w-picture mx-auto   items-center  xl:items-start justify-center  text-white dotted-background">
+            <div class="w-full xl:w-1/2  text-center h-auto xl:h-[463px] w-[800px]  ">
+                <img src="./media/home/consulting.jpg" alt="" class=" ml-0 h-full  w-full ">
+            </div>
+            <div class=" w-full xl:w-1/2 xl:ml-0 pl-[40px] ">
+                <div class="  pt-[70px] ">
+                    <div class="line hidden xl:block bg-white relative h-[1px] w-[250px] z-1 right-[200px] top-[20px]  "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class=" ml-0 xl:ml-[70px] mt-[8px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px] ">
+                </div>
+                <h1 class="text-white xl:max-w-[150px] pl-0 xl:pl-[70px]  font-bold text-5xl  xl:text-3xl my-[30px]">CONSULTING</h1>
+                <p class="text-white pl-0 xl:pl-[100px] pr-[30px] max-w-[750px] max-w-[900px] text-4xl xl:text-sm leading-loose xl:leading-loose xl:max-w-[700px]">The long-term experience of our experts is a guarantee that we have the necessary knowledge to guide you through the individual stages or the entire process of planning, designing and the very realization of specific technical solutions.</p>
+                <div class="xl:pt-[50px] py-[30px]  pl-0 xl:pl-[100px]">
+                    <a href="consulting.html" >
+                        <p  class="text-white text-md hover:text-[#486BA3] text-3xl xl:text-base   underline underline-offset-8">MORE DETAILS</p>
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-[100px] max-w-picture mx-auto   ">
+
+
+        <div class="flex justify-center flex flex-col-reverse dotted-background xl:flex-row  w-full text-white ">
+
+            <div class=" xl:w-1/2 pl-[40px] xl:pl-[0px]  ">
+                <div class=" pt-[70px] relative xl:left-[200px] flex xl:flex xl:flex-row-reverse items-center">
+                    <div class="line bg-white hidden xl:block  h-[1px] w-[250px] z-1    "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class="xl:mt-0 mt-[8px] xl:ml-0 xl:mr-[10px] mr-[0px]  xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px]">
+                </div>
+                <h1 class="text-white    font-bold text-5xl xl:ml-[50px] ml-0  my-[30px]">ELECTRICAL SYSTEMS DESIGN</h1>
+                <p class="text-white pl-0 xl:pl-[30px] max-w-[750px] text-4xl xl:text-sm leading-loose xl:text-right mr-[130px]  xl:leading-loose  xl:max-w-[520px]">Our team of specialists is experienced in designing high and low current electrical installations. The documentation we create must meet specific standards and regulations set forth by the relevant governing bodies.</p>
+
+                    <a href="electricalSystemDesign.html" >
+                        <p  class="text-white xl:py-[33px] xl:py-[30px] py-[50px]  pl-0 xl:ml-[330px] w-full  hover:text-[#486BA3] underline underline-offset-8 text-3xl xl:text-base ">MORE DETAILS</p>
+
+
+                    </a>
+
+            </div>
+            <div class="w-full xl:w-1/2  text-center h-[463px] ">
+                <img src="./media/services/electricalDesign.jpg" alt="" class="w-full h-full">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-[100px] max-w-picture mx-auto  dotted-background ">
+
+
+        <div class="flex-col flex xl:flex-row max-w-picture mx-auto     xl:items-start justify-center  text-white ">
+            <div class="w-full xl:w-1/2  text-center h-auto xl:h-[463px] w-[800px] ">
+                <img src="./media/home/installation.jpg" alt="" class=" ml-0 h-full  w-full ">
+            </div>
+            <div class=" xl:w-1/2 xl:ml-0 ml-[40px]">
+                <div class="  pt-[70px] ">
+                    <div class="line hidden xl:block bg-white relative h-[1px] w-[250px] z-1 right-[200px] top-[20px]  "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class=" ml-0 xl:ml-[70px] mt-[8px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px] ">
+                </div>
+                <h1 class="text-white max-w-[150px] pl-0 xl:pl-[70px]  font-bold text-5xl xl:text-3xl my-[30px]">INSTALLATION</h1>
+                <p class="text-white pl-0 xl:pl-[100px] pr-[30px] max-w-[900px] xl:max-w-[750px] text-4xl xl:text-sm leading-loose xl:leading-loose xl:max-w-[700px]">At TASCAL ENGINEERING, we are committed to providing top-quality electrical installation services to our commercial and industrial clients. We understand that a properly installed electrical system is crucial for the safe and efficient operation of any commercial or industrial facility.</p>
+                <div class="xl:pt-[50px] py-[50px] w-full pl-0 xl:pl-[100px]">
+                    <a href="installation.html" >
+                        <p  class="text-white text-md hover:text-[#486BA3] text-3xl xl:text-base   underline underline-offset-8">MORE DETAILS</p>
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-[100px] max-w-picture mx-auto  dotted-background ">
+
+
+        <div class="flex justify-center flex flex-col-reverse xl:flex-row   w-full text-white ">
+
+            <div class=" xl:w-1/2  pl-[40px]">
+                <div class=" pt-[70px] relative xl:left-[200px] flex xl:flex xl:flex-row-reverse items-center">
+                    <div class="line bg-white hidden xl:block  h-[1px] w-[250px] z-1    "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class="xl:mt-0 mt-[8px] xl:ml-0 xl:mr-[10px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px]">
+                </div>
+                <h1 class="text-white ml-0   font-bold text-5xl xl:text-3xl xl:ml-[170px]  my-[30px]">PROGRAMMING</h1>
+                <p class="text-white max-w-[900px]  xl:max-w-[750px] text-4xl xl:text-sm leading-loose xl:text-right xl:mr-[130px]  xl:leading-loose  xl:max-w-[520px]">In order to ensure the successful implementation of turnkey projects, our team is equipped with the technical and personnel capabilities to parameterize, configure, and program various central and peripheral devices of various subsystems.</p>
+
+                <a href="programing.html" >
+                    <p  class="text-white xl:py-[33px] py-[50px] xl:mt-[50px]  pl-0 xl:ml-[330px] w-full  hover:text-[#486BA3] underline underline-offset-8 text-3xl xl:text-base ">MORE DETAILS</p>
+
+
+                </a>
+
+            </div>
+            <div class="w-full xl:w-1/2  text-center h-[463px] ">
+                <img src="./media/home/programming.jpg" alt="" class="w-full h-full">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-[100px] max-w-picture mx-auto   ">
+
+
+        <div class="flex-col flex xl:flex-row max-w-picture mx-auto  dotted-background   xl:items-start justify-center  text-white ">
+            <div class="w-full xl:w-1/2  text-center h-auto xl:h-[463px] w-[800px] ">
+                <img src="./media/services/commissioning.jpg" alt="" class=" ml-0 h-full  w-full ">
+            </div>
+            <div class=" xl:w-1/2 xl:ml-0 ml-[40px]">
+                <div class="  pt-[70px] ">
+                    <div class="line hidden xl:block bg-white relative h-[1px] w-[250px] z-1 right-[200px] top-[20px]  "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class=" ml-0 xl:ml-[70px] mt-[8px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px] ">
+                </div>
+                <h1 class="text-white  pl-0 xl:pl-[70px]  font-bold text-5xl xl:text-3xl my-[30px]">COMMISSIONING & START UP</h1>
+                <p class="text-white pl-0 xl:pl-[100px] pr-[30px] max-w-[900px] xl:max-w-[750px] text-4xl xl:text-sm leading-loose xl:leading-loose xl:max-w-[700px]">The long-term experience of our experts is a guarantee that we have the necessary knowledge to guide you through the individual stages or the entire process of planning, designing and the very realization of specific technical solutions.</p>
+                <div class=" py-[50px] xl:pt-[50px] w-full pl-0 xl:pl-[100px]">
+                    <a href="commissioning&StartUp.html" >
+                        <p  class="text-white text-md hover:text-[#486BA3] text-3xl xl:text-base   underline underline-offset-8">MORE DETAILS</p>
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-[100px] max-w-picture mx-auto  dotted-background ">
+
+
+        <div class="flex justify-center flex flex-col-reverse  xl:flex-row  w-full text-white ">
+
+            <div class=" xl:w-1/2  pl-[40px]">
+                <div class=" pt-[70px] relative xl:left-[200px] flex xl:flex xl:flex-row-reverse items-center">
+                    <div class="line bg-white hidden xl:block  h-[1px] w-[250px] z-1    "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class="xl:mt-0 mt-[8px] xl:ml-0 mr-[10px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px]">
+                </div>
+                <h1 class="text-white    font-bold text-3xl xl:mr-[10px]  my-[30px]">CONTROL PANELS PRODUCTION</h1>
+                <p class="text-white xl:pl-[30px] max-w-[900px] xl:max-w-[750px] text-4xl xl:text-sm leading-loose xl:text-right mr-[130px]  xl:leading-loose  xl:max-w-[520px]">TASCAL ENGINEERING is a manufacturer of Electrical Panels and assemblies for clients in a wide range of industries. We offer custom design and fabrication for OEM clients, contractors, and end users requiring either large or small production runs.</p>
+
+                <a href="controlPanelsProduction.html" >
+                    <p  class="text-white xl:py-[33px] py-[50px] xl:mt-[50px]  pl-0 xl:ml-[330px] w-full  hover:text-[#486BA3] underline underline-offset-8 text-3xl xl:text-base ">MORE DETAILS</p>
+
+
+                </a>
+
+            </div>
+            <div class="w-full xl:w-1/2  text-center h-[463px] ">
+                <img src="./media/Gallery/7.jpg" alt="" class="w-full h-full">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-[100px]   dotted-background ">
+
+
+        <div class="flex-col flex xl:flex-row max-w-picture mx-auto     xl:items-start justify-center  text-white ">
+            <div class="w-full xl:w-1/2  text-center h-auto xl:h-[463px] w-[800px] ">
+                <img src="./media/services/maintenance.jpg" alt="" class=" ml-0 h-full  w-full ">
+            </div>
+            <div class=" xl:w-1/2 xl:ml-0 ml-[40px]">
+                <div class="  pt-[70px] ">
+                    <div class="line hidden xl:block bg-white relative h-[1px] w-[250px] z-1 right-[200px] top-[20px]  "></div>
+                    <img src="/media/logo/Tascal-Logo-Oneline@4x.png" alt=""  class=" ml-0 xl:ml-[70px] mt-[8px] xl:w-[200px] xl:h-[18px]  w-[330px] h-[30px] ">
+                </div>
+                <h1 class="text-white max-w-[150px] pl-0 xl:pl-[70px]  font-bold text-5xl xl:text-3xl my-[30px]">MAINTENANCE</h1>
+                <p class="text-white pl-0 xl:pl-[140px] pr-[50px] max-w-[900px] xl:max-w-[750px] text-4xl xl:text-sm leading-loose xl:leading-loose xl:max-w-[700px]">Regular maintenance of electrical installations is important to ensure the safety of people working in the facility, as well as to prevent equipment failures and minimize downtime.</p>
+                <div class="xl:pt-[50px] py-[50px] w-full pl-0 xl:pl-[140px]">
+                    <a href="maintenance.html" >
+                        <p  class="text-white text-md hover:text-[#486BA3] text-3xl xl:text-base   underline underline-offset-8">MORE DETAILS</p>
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    <marquee direction="left" behavior="scroll" scrollamount="10" class="my-[150px]" >-->
+<!--        <div class="flex">-->
+<!--            <img src="/media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">-->
+<!--        </div>-->
+
+<!--    </marquee>-->
+
+    <div class="slider-wrapper py-[50px]">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="/media/slider/fsh.png" alt="Image 1" width="200" height="200">
+                <img src="/media/slider/kinostar.png" alt="Image 2" width="200" height="200">
+                <img src="/media/slider/mediamarkt.png" alt="Image 3" width="200" height="200">
+                <img src="/media/slider/mosfarma.png" alt="Image 4" width="200" height="200">
+                <img src="/media/slider/obi.png" alt="Image 5" width="200" height="200">
+                <img src="/media/slider/porsche.png" alt="Image 6" width="200" height="200">
+                <img src="/media/slider/president.png" alt="Image 7" width="200" height="200">
+                <img src="/media/slider/solopharm.png" alt="Image 8" width="200" height="200">
+                <img src="/media/slider/vw.png" alt="Image 9" width="200" height="200">
+                <img src="/media/slider/wimmbilldann.png" alt="Image 10" width="200" height="200">
+                <img src="/media/slider/rosnano.png" alt="Image 11" width="200" height="200">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</main>
+
+<footer class="bg-[#D3D3D3] w-full  justify-center">
+    <div class=" max-w-container p-[30px]  mx-auto ">
+
+
+
+
+        <div class="flex items-center justify-between">
+            <img src="/media/logo/Tascal-Logo-Dark@4x.png" alt="" width="200" height="60" >
+            <div class="my-[30px]">
+                <p class="text-[#1d3960] font-extrabold">E-MAIL</p>
+                <p class="text-[#1d3960]  underline">info@tascal.me</p>
+            </div>
+
+            <div class="my-[30px] text-[#1d3960]">
+                <p class=" font-extrabold">ADDRESS 1 </p>
+                <p class=" ">Podgorica, Montenegro</p>
+                <p class=" ">Bul. Džorža Vašingtona 108, Capital Plaza,</p>
+                <p class=" ">A16/ I, 81000 Podgorica</p>
+                <p class=" ">+382 68 604 674</p>
+            </div>
+
+            <div class="my-[30px] text-[#1d3960]">
+                <p class=" font-extrabold">ADDRESS 2 </p>
+                <p class="">Ljubljana, Slovenia</p>
+                <p class="">Ukmarjeva 4, 1000 Ljubljana</p>
+                <p class="">+382 40 632 192</p>
+            </div>
+        </div>
+        <div class="line bg-black h-3 w-full h-[1px]  my-[50px]"></div>
+        <p class="text-xl font-light">© 2023 TASCAL ENGINEERING</p>
+    </div>
+</footer>
+<script type="module" src="./app.js"></script>
+
+</body>
+</html>
