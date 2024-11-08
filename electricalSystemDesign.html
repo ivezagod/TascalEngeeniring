@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
 </head>
 <body class="bg-[#192436]  font-main">
 <nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
@@ -129,80 +131,80 @@
         </div>
 
     </div>
-<!--    <h1 class="text-white xl:text-3xl text-4xl font-bold">Electrical Cabinet - Our BIM Model</h1>-->
+    <h1 class="text-white xl:text-3xl text-4xl font-bold">Electrical Cabinet - Our BIM Model</h1>
 
-<!--    <div class="w-full h-[500px] my-[50px]" id="three-container"></div>-->
-
-
+    <div class="w-full h-[500px] my-[50px]" id="three-container"></div>
 
 
 
 
 
-<!--    <script>-->
-<!--        const container = document.querySelector('#three-container'); // Use specific ID for container-->
 
-<!--        // Set up the scene, camera, and renderer-->
-<!--        const scene = new THREE.Scene();-->
-<!--        const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);-->
-<!--        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });  // Enable antialias for smoother lines-->
-<!--        renderer.setClearColor(0x000000, 0);-->
 
-<!--        // Set the canvas size to match the container-->
-<!--        renderer.setSize(container.offsetWidth, container.offsetHeight);-->
-<!--        renderer.setPixelRatio(window.devicePixelRatio); // Ensure better resolution on high DPI screens-->
-<!--        container.appendChild(renderer.domElement);-->
+    <script>
+        const container = document.querySelector('#three-container'); // Use specific ID for container
 
-<!--        // Add controls to move the object-->
-<!--        const controls = new THREE.OrbitControls(camera, renderer.domElement);-->
-<!--        controls.enableDamping = true;-->
-<!--        controls.dampingFactor = 0.05;-->
-<!--        controls.enableZoom = true;-->
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });  // Enable antialias for smoother lines
+        renderer.setClearColor(0x000000, 0);
 
-<!--        // Load the GLB file-->
-<!--        const loader = new THREE.GLTFLoader();-->
-<!--        loader.load('/3D/LUDILOMOZGAUVOPSTE.glb', (gltf) => {-->
-<!--            const object = gltf.scene;-->
+        // Set the canvas size to match the container
+        renderer.setSize(container.offsetWidth, container.offsetHeight);
+        renderer.setPixelRatio(window.devicePixelRatio); // Ensure better resolution on high DPI screens
+        container.appendChild(renderer.domElement);
 
-<!--            // Center the object-->
-<!--            const box = new THREE.Box3().setFromObject(object);-->
-<!--            const center = box.getCenter(new THREE.Vector3());-->
-<!--            object.position.sub(center);  // Adjust the position to center the object-->
-<!--            scene.add(object);-->
-<!--        });-->
+        // Add controls to move the object
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.enableZoom = true;
 
-<!--        // Add an ambient light for overall illumination-->
-<!--        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light-->
-<!--        scene.add(ambientLight);-->
+        // Load the GLB file
+        const loader = new THREE.GLTFLoader();
+        loader.load('/3D/LUDILOMOZGAUVOPSTE.glb', (gltf) => {
+            const object = gltf.scene;
 
-<!--        // Add a directional light to create shadows and highlights-->
-<!--        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);-->
-<!--        directionalLight.position.set(5, 10, 7.5); // Position the light-->
-<!--        directionalLight.castShadow = true;        // Enable shadow casting if needed-->
-<!--        scene.add(directionalLight);-->
+            // Center the object
+            const box = new THREE.Box3().setFromObject(object);
+            const center = box.getCenter(new THREE.Vector3());
+            object.position.sub(center);  // Adjust the position to center the object
+            scene.add(object);
+        });
 
-<!--        // Set camera position-->
-<!--        camera.position.z = 2;-->
+        // Add an ambient light for overall illumination
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
+        scene.add(ambientLight);
 
-<!--        // Animation loop-->
-<!--        function animate() {-->
-<!--            requestAnimationFrame(animate);-->
-<!--            controls.update();-->
-<!--            renderer.render(scene, camera);-->
-<!--        }-->
+        // Add a directional light to create shadows and highlights
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 10, 7.5); // Position the light
+        directionalLight.castShadow = true;        // Enable shadow casting if needed
+        scene.add(directionalLight);
 
-<!--        // Initial animation-->
-<!--        animate();-->
+        // Set camera position
+        camera.position.z = 2;
 
-<!--        // Resize handling (if the container size changes dynamically)-->
-<!--        window.addEventListener('resize', () => {-->
-<!--            // Update the canvas size to match the container-->
-<!--            renderer.setSize(container.offsetWidth, container.offsetHeight);-->
-<!--            renderer.setPixelRatio(window.devicePixelRatio); // Update pixel ratio on resize for better resolution-->
-<!--            camera.aspect = container.offsetWidth / container.offsetHeight;-->
-<!--            camera.updateProjectionMatrix();-->
-<!--        });-->
-<!--    </script>-->
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        // Initial animation
+        animate();
+
+        // Resize handling (if the container size changes dynamically)
+        window.addEventListener('resize', () => {
+            // Update the canvas size to match the container
+            renderer.setSize(container.offsetWidth, container.offsetHeight);
+            renderer.setPixelRatio(window.devicePixelRatio); // Update pixel ratio on resize for better resolution
+            camera.aspect = container.offsetWidth / container.offsetHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
 
 
 
