@@ -206,3 +206,20 @@ body {
     transform: translate(-100px, 80px);
 }
 
+.sketchfab-embed-wrapper {
+    width: 100%;  /* Full width */
+    max-width: 1200px;  /* Limit width on larger screens */
+    margin: 0 auto;  /* Center the container */
+}
+
+.sketchfab-embed-wrapper iframe {
+    width: 100%;  /* Make iframe fill the container */
+    height: 600px;  /* Set height of the iframe (can be adjusted) */
+}
+
+@media (max-width: 768px) {
+    .sketchfab-embed-wrapper iframe {
+        height: 400px;  /* Adjust height for smaller screens */
+    }
+}
+

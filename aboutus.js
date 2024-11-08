@@ -308,6 +308,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         'The team creating our panels know exactly what they are being for, how they will be installed, and have a real understanding of the projects themselves. They are not just following a panel diagram.': 'Tim koji kreira naše panele tačno zna za šta se koriste, kako će biti instalirani i imaju pravo razumevanje samih projekata. Oni ne prate samo dijagram panela.',
 
+        'BIM Model of our Electrical Cabinet':'BIM Model jednog od naših razvodnih ormara',
+
         'We design our own control panel/switchgear units in-house. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).': 'Mi dizajniramo naše sopstvene kontrolne panele/jedinice za razvod u kući. U tu svrhu naši električni inženjeri koriste EPLAN Electric P8 CAE alat. Nakon stvarne faze električnog dizajna, 3D strukturni dizajn se takođe implementira u Pro Panel, kao i Eaton-ov ili ABB-ov softver za konfiguraciju i cenu koji omogućava našim stručnjacima da dizajniraju, konfigurišu i izračunaju trošak sklopova niskonaponskih razvodnih ormana (Eaton Configurator xEnergy, ABB e-Design).',
 };
 
