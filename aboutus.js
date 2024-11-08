@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         "HOME": "POČETNA",
         "BROCHURE": "BROŠURA",
-        "ELECTRICAL SYSTEMS DESIGN": "DIZAJN ELEKTRIČNIH SISTEMA",
+        "ELECTRICAL SYSTEMS DESIGN": "Projektovanje elektroenergetskih sistema",
         "COMMISSIONING & STARTUP": "PUŠTANJE U RAD I POKRETANJE",
         "ABOUT US": "O NAMA",
         "SERVICES": "USLUGE",
