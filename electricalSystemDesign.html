@@ -144,11 +144,12 @@
         // Set up the scene, camera, and renderer
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true });  // Transparent background
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });  // Enable antialias for smoother lines
         renderer.setClearColor(0x000000, 0);
 
         // Set the canvas size to match the container
         renderer.setSize(container.offsetWidth, container.offsetHeight);
+        renderer.setPixelRatio(window.devicePixelRatio); // Ensure better resolution on high DPI screens
         container.appendChild(renderer.domElement);
 
         // Add controls to move the object
@@ -157,21 +158,15 @@
         controls.dampingFactor = 0.05;
         controls.enableZoom = true;
 
-        // Load the 3D model
-        const objLoader = new THREE.OBJLoader();
-        objLoader.load('media/3D/objekat1.obj', (object) => {
-            // Optional: Apply a basic material if the object has none
-            object.traverse((child) => {
-                if (child.isMesh && !child.material) {
-                    child.material = new THREE.MeshStandardMaterial({ color: 0x888888 });  // Default gray color
-                }
-            });
+        // Load the GLB file
+        const loader = new THREE.GLTFLoader();
+        loader.load('/3D/LUDILOMOZGAUVOPSTE.glb', (gltf) => {
+            const object = gltf.scene;
 
             // Center the object
-            const boundingBox = new THREE.Box3().setFromObject(object);
-            const objectCenter = boundingBox.getCenter(new THREE.Vector3());
-            object.position.sub(objectCenter);  // Adjust the object's position to center it
-
+            const box = new THREE.Box3().setFromObject(object);
+            const center = box.getCenter(new THREE.Vector3());
+            object.position.sub(center);  // Adjust the position to center the object
             scene.add(object);
         });
 
@@ -186,7 +181,7 @@
         scene.add(directionalLight);
 
         // Set camera position
-        camera.position.z = 5;
+        camera.position.z = 2;
 
         // Animation loop
         function animate() {
@@ -202,10 +197,12 @@
         window.addEventListener('resize', () => {
             // Update the canvas size to match the container
             renderer.setSize(container.offsetWidth, container.offsetHeight);
+            renderer.setPixelRatio(window.devicePixelRatio); // Update pixel ratio on resize for better resolution
             camera.aspect = container.offsetWidth / container.offsetHeight;
             camera.updateProjectionMatrix();
         });
     </script>
+
 
 
 
