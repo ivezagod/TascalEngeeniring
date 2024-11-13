@@ -118,7 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         "HOME": "POČETNA",
         "BROCHURE": "BROŠURA",
-        "ELECTRICAL SYSTEMS DESIGN": "Projektovanje elektroenergetskih sistema",
+        "ELECTRICAL SYSTEM DESIGN": "PROJEKTOVANJE ELEKTROENERGETSKIH SISTEMA",
+        "Electrical system design": "Projektovanje elektroenergetskih sistema",
         "COMMISSIONING & STARTUP": "PUŠTANJE U RAD I POKRETANJE",
         "ABOUT US": "O NAMA",
         "SERVICES": "USLUGE",
