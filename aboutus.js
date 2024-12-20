@@ -155,9 +155,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "Project and workshop documentation is created in our company using licensed AutoCAD, Microsoft Office, ePLAN, Siemens, Eaton, ABB software packages.": "Projektna i radionička dokumentacija se kreiraju u našoj firmi korišćenjem licenciranih softverskih paketa AutoCAD-a, Revit-a, Microsoft Office-a, ePLAN-a, Siemensa, Eaton-a, ABB-a.\n",
         "The own production of distribution and control cabinets is organized in Podgorica, Montenegro.": "Sopstvena proizvodnja razvodnih i kontrolnih ormara organizovana je u Podgorici, u Crnoj Gori.\n",
         "The implemented integrated management system in the field of quality, environmental protection and occupational safety has as a result the confirmed fact that the services we provide are in accordance with the requirements of the ISO 9001:2015, ISO 14001:2015 and ISO 45001:2018 standards.": "Implementirani integrisani sistem upravljanja u oblasti kvaliteta, zaštite životne sredine i bezbjednosti na radu rezultira potvrđenim činjenicom da usluge koje pružamo odgovaraju zahtjevima standarda ISO 9001:2015, ISO 14001:2015 i ISO 45001:2018.",
-        "YEARS OF EXPERIENCE": "GODINE ISKUSTVA",
-        "FINISHED PROJECTS": "ZAVRŠENI PROJEKTI",
-        "SATISFIED CLIENTS": "ZADOVOLJNI KLIJENTI",
+        "YEARS OF EXPERIENCE": "GODINA ISKUSTVA",
+        "FINISHED PROJECTS": "ZAVRŠENIH PROJEKTA",
+        "SATISFIED CLIENTS": "ZADOVOLJNIH KLIJENTA",
 
 
         'We can provide valuable assistance in the process of obtaining reliable and objective information before making a decision regarding a certain investment, but also later in the course of its realization.': 'Možemo vam pružiti vrijednu pomoć u procesu dobijanja pouzdanih i objektivnih informacija prije donošenja odluke o određenoj investiciji, kao i u kasnijim fazama, tokom njene realizacije.\n',
