@@ -310,6 +310,17 @@ document.addEventListener('DOMContentLoaded', function() {
         'The team creating our panels know exactly what they are being for, how they will be installed, and have a real understanding of the projects themselves. They are not just following a panel diagram.': 'Tim koji kreira naše panele tačno zna za šta se koriste, kako će biti instalirani i imaju pravo razumevanje samih projekata. Oni ne prate samo dijagram panela.',
 
         'BIM Model of our Electrical Cabinet':'BIM Model jednog od naših razvodnih ormara',
+        'Luxurious Seafront Condo Hotel 5* "Sea Star" (15.000m2) in Bečići, Montenegro':'Luksuzni kondo hotel na obali mora "Sea Star" (15.000m2), kategorije 5*, Bečići, Crna Gora',
+        'Four Seasons Hotel 5*, Red Square, Moscow, Russian Federation':'Four Seasons hotel kategorije 5*, Crveni Trg, Moskva, Ruska Federacija',
+        'Luxurious 5* Seafront Condo "Hotel SUNRAF" 13.000m2, in Bečići, Montenegro':'Luksuzni kondo hotel na obali mora "Hotel SUNRAF" (13.000m2), kategorije 5*, Bečići, Crna Gora',
+        'SPA at Ānanti Resort, Residences & Beach Club 5* luxury resort in Reževići, Montenegro':'SPA Centar - "Ānanti Resort, Residences & Beach Club 5* luxury resort"  Reževići, Crna Gora',
+        'Riga Mall shopping centre (146.000m2), Moscow, Russian Federation':'Tržni centar "Riga Mall" (146.000m2), Moskva, Ruska Federacija',
+        'Exclusive store "Stefano Ricci" in Tverskaya Street, Moscow, Russian Federation':'Ekskluzivna prodavnica "Stefano Ricci" , Tverska ulica, Moskva, Ruska Federacija',
+        'Luxurious 5* "GRAND HOTEL MONTENEGRO" (40.000m2) in Rafailovići, Montenegro':'Luksuzni hotel "GRAND HOTEL MONTENEGRO" (40.000m2), kategorije 5*, Rafailovići, Crna Gora',
+        'Luxurious 5* villas (4)- unique project in the new complex in Tivat, Montenegro':'4 luksuzne vile kategorije 5* - jedinstven projekat u novom kompleksu, Tivat, Crna Gora',
+        'Residential & commerical building "GREEN LEVEL" (27.000m2), Podgorica, Montenegro':'Stambeno-poslovna zgrada "GREEN LEVEL" (27.000m2), Podgorica, Crna Gora',
+        'RUSNANO Headquarters, Moscow, Russian Federation':'Stambeno-poslovna zgrada "Sjedište ROSNANO, Moskva, Ruska Federacija',
+        'Luxurious 5* main building - Hotel (so called "Unit C" or facility No. 13) within the tourist settlement "Smokva Bay" in Reževići, Montenegro':'Luksuzni hotel kategorije 5* - Glavni objekat (takozvana "lamela C" ili objekat br. 13) u okviru turističkog kompleksa "Smokva Bay", Reževići, Crna Gora',
 
         'We design our own control panel/switchgear units in-house. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).': 'Mi dizajniramo naše sopstvene kontrolne panele/jedinice za razvod u kući. U tu svrhu naši električni inženjeri koriste EPLAN Electric P8 CAE alat. Nakon stvarne faze električnog dizajna, 3D strukturni dizajn se takođe implementira u Pro Panel, kao i Eaton-ov ili ABB-ov softver za konfiguraciju i cenu koji omogućava našim stručnjacima da dizajniraju, konfigurišu i izračunaju trošak sklopova niskonaponskih razvodnih ormana (Eaton Configurator xEnergy, ABB e-Design).',
 };
