@@ -77,70 +77,120 @@ body {
 #burgerDropDown .active {
     color: blue;
 }
-.slider-wrapper {
-    width: 100%;
-}
-
-.slider-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .slider {
-    display: flex;
-    animation: slide-left 8s linear infinite;
-}
-
-.slider img {
-    margin-right: 20px;
-}
-
-@keyframes slide-left {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
-    }
-}
-
-
-.slider-wrapper2{
-    width: 100%;
-
-}
-
-.slider-container2 {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    height: 250px;
+    margin: auto;
     position: relative;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.slider-track {
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
+}
+.slide {
+    height: 210px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 10));
+    }
 }
 
 .slider2 {
-    display: flex;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
     overflow: hidden;
+
 }
 
-.slider2 img {
-    margin-right: 20px;
-    animation: slide-left 2s linear infinite;
+.slider-track2 {
+    display: flex;
+    width: calc(250px * 44);
+    animation: scroll 40s linear infinite;
+}
+.slide2 {
+    height: 210px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
 }
 
-@keyframes slide-left {
-    0% {
-        transform: translateX(0%);
+.slide img {
+    width: 100%;
+}
+
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
+    100%{
+        transform: translateX(calc(-250px * 22));
     }
 }
+
+.slider3 {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.slider-track3 {
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
+}
+.slide3 {
+    height: 210px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.slide3 img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 10));
+    }
+}
+
+
 
 .custom-border {
     border-width: 12px; /* Adjust the width as needed */

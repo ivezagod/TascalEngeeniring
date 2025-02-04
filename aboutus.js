@@ -269,7 +269,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         'The team creating our panels know exactly what they are being for, how they will be installed, and have a real understanding of the projects themselves. They are not just following a panel diagram.': 'Tim koji kreira naše panele tačno zna za šta se koriste, kako će biti instalirani i imaju pravo razumijevanje samih projekata. Oni ne prate samo dijagram panela.',
 
+
         'We design our own control panel/switchgear units inhouse. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).': 'Mi dizajniramo naše sopstvene kontrolne panele/jedinice za razvod u kući. U tu svrhu naši električni inženjeri koriste EPLAN Electric P8 CAE alat. Nakon stvarne faze električnog dizajna, 3D strukturni dizajn se takođe implementira u Pro Panel, kao i Eaton-ov ili ABB-ov softver za konfiguraciju i cijenu koji omogućava našim stručnjacima da dizajniraju, konfigurišu i izračunaju trošak sklopova niskonaponskih razvodnih ormana (Eaton Configurator xEnergy, ABB e-Design).',
+        'About us':'O nama',
 
         'All equipment is powered up at the factory and fully tested for functionality prior to leaving our facility. Our internal procedures and standards ensure that our panels are delivered ready for field startup and commissioning.': 'Sva oprema se pokreće u fabrici i potpuno se testira za funkcionalnost prije nego što napusti našu ustanovu. Naše interne procedure i standardi osiguravaju da naši paneli budu isporučeni spremni za početak rada i puštanje u rad na terenu.',
 
