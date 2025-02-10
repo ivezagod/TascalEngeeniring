@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'OUR SERVICES': 'NAŠE USLUGE',
         'Our team of specialists is experienced in designing high and low current electrical installations. The documentation we create must meet specific standards and regulations set forth by the relevant governing bodies.': 'Naš tim stručnjaka ima iskustva u dizajniranju električnih instalacija visokog i niskog napona. Dokumentacija koju kreiramo mora zadovoljiti određene standarde i propise propisane od strane relevantnih tijela vlasti.',
         'Commissioning and start-up procedures are critical steps in the deployment of control systems. These procedures ensure that the control system operates as expected and meets the client’s requirements.': 'Procedura puštanja u rad i pokretanja su ključni koraci u implementaciji kontrolnih sistema. Ove procedure osiguravaju da kontrolni sistem radi kako je očekivano i ispunjava zahtjeve klijenta.',
-        'CONTROL PANELS PRODUCTION': 'PROIZVODNJA KONTROLNIH PANELA',
-        'TASCAL ENGINEERING is a manufacturer of Electrical Panels and assemblies for clients in a wide range of industries. We offer custom design and fabrication for OEM clients, contractors, and end users requiring either large or small production runs.': 'TASCAL INŽENJERING je proizvođač električnih panela i sklopova za klijente u različitim industrijama. Nudimo prilagođeni dizajn i proizvodnju za OEM klijente, izvođače radova i krajnje korisnike koji zahtijevaju velike ili male serije proizvodnje.',
+        'CONTROL PANELS PRODUCTION': 'PROIZVODNJA RAZVODNIH ORMARA',
+        'TASCAL ENGINEERING is a manufacturer of Electrical Panels and assemblies for clients in a wide range of industries. We offer custom design and fabrication for OEM clients, contractors, and end users requiring either large or small production runs.': 'TASCAL INŽENJERING je proizvođač električnih ormara i sklopova za klijente u različitim industrijama. Nudimo prilagođeni dizajn i proizvodnju za OEM klijente, izvođače radova i krajnje korisnike koji zahtijevaju velike ili male serije proizvodnje.',
         'MAINTENANCE': 'ODRŽAVANJE',
         'Regular maintenance of electrical installations is important to ensure the safety of people working in the facility, as well as to prevent equipment failures and minimize downtime.': 'Redovno održavanje električnih instalacija važno je kako bi se osigurala sigurnost ljudi koji rade u objektu, kao i sprečavanje kvarova opreme i minimiziranje vremena prestanka rada.',
         'About Us': 'O NAMA',
@@ -109,6 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'At TASCAL ENGINEERING, we are committed to providing top-quality electrical installation services to our commercial and industrial clients. We understand that a properly installed electrical system is crucial for the safe and efficient operation of any commercial or industrial facility.': 'U TASCAL INŽENJERINGU, posvećeni smo pružanju visokokvalitetnih usluga električne instalacije našim komercijalnim i industrijskim klijentima. Razumijemo da je pravilno instaliran električni sistem ključan za siguran i efikasan rad svakog komercijalnog ili industrijskog objekta.',
         'PROGRAMMING': 'PROGRAMIRANJE',
         'In order to ensure the successful implementation of turnkey projects, our team is equipped with the technical and personnel capabilities to parameterize, configure, and program various central and peripheral devices of various subsystems.': 'Kako bismo osigurali uspješnu implementaciju ključ u ruke projekata, naš tim je opremljen tehničkim i kadrovskim sposobnostima za parametrizaciju, konfiguraciju i programiranje različitih centralnih i perifernih uređaja različitih podsistema.'
+
+
 
 
 };

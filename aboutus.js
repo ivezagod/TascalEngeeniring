@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "Our team of specialists is experienced in designing high and low current electrical installations. The documentation we create must meet specific standards and regulations set forth by the relevant governing bodies.": "Naš tim specijalista ima iskustva u dizajniranju električnih instalacija visokog i niskog napona. Dokumentacija koju kreiramo mora zadovoljiti određene standarde i propise koje postavlja nadležna regulatorna tijela.",
         "COMMISSIONING & START UP": "PUŠTANJE U RAD & POKRETANJE",
         "Commissioning and start-up procedures are critical steps in the deployment of control systems. These procedures ensure that the control system operates as expected and meets the client’s requirements.": "Procedura puštanja u rad i pokretanja su ključni koraci u implementaciji kontrolnih sistema. Ove procedure osiguravaju da kontrolni sistem radi kako se očekuje i zadovoljava zahtjeve klijenta.",
-        "CONTROL PANELS PRODUCTION": "PROIZVODNJA KONTROLNIH PANELA",
-        "Control panels production": "Proizvodnja kontrolnih panela",
+        "CONTROL PANELS PRODUCTION": "PROIZVODNJA RAZVODNIH ORMARA",
+        "Control panels production": "Proizvodnja razvodnih ormara",
         "TASCAL ENGINEERING is a manufacturer of Electrical Panels and assemblies for clients in a wide range of industries. We offer custom design and fabrication for OEM clients, contractors, and end users requiring either large or small production runs.": "TASCAL INŽENJERING je proizvođač električnih panela i sklopova za klijente u različitim industrijama. Nudimo prilagođeni dizajn i izradu za OEM klijente, izvođače radova i krajnje korisnike koji zahtijevaju velike ili male serije proizvodnje.",
         "MAINTENANCE": "ODRŽAVANJE",
         "Regular maintenance of electrical installations is important to ensure the safety of people working in the facility, as well as to prevent equipment failures and minimize downtime.": "Redovno održavanje električnih instalacija važno je kako bi se osigurala sigurnost ljudi koji rade u objektu, kao i sprečavanje kvarova opreme i minimiziranje vremena prestanka rada.",
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Documentation': 'Dokumentacija',
         'Records are kept of all maintenance activities, including inspections, tests, and repairs.': 'Vode se evidencije svih aktivnosti održavanja, uključujući inspekcije, testove i popravke.',
 
-        'Take comfort that your control panels&systems are designed by a staff with years of experience and Professional Engineering licenses held in multiple states (Russian Federation, Serbia, Montenegro). We are the control panel experts, so you do not have to be. Contact us and we will develop an optimum controls solution for you.': 'Budite bez brige jer su vaši kontrolni paneli i sistemi dizajnirani od strane osoblja sa dugogodišnjim iskustvom i profesionalnim inženjerskim licencama koje važe u više država (Ruska Federacija, Srbija, Crna Gora). Mi smo stručnjaci za kontrolne panele, tako da vi ne morate biti. Kontaktirajte nas i mi ćemo razviti optimalno rješenje za vas.',
+        'Take comfort that your control panels&systems are designed by a staff with years of experience and Professional Engineering licenses held in multiple states (Russian Federation, Serbia, Montenegro). We are the control panel experts, so you do not have to be. Contact us and we will develop an optimum controls solution for you.': 'Budite bez brige jer su vaši razvodni ormari i sistemi dizajnirani od strane osoblja sa dugogodišnjim iskustvom i profesionalnim inženjerskim licencama koje važe u više država (Ruska Federacija, Srbija, Crna Gora). Mi smo stručnjaci za kontrolne panele, tako da vi ne morate biti. Kontaktirajte nas i mi ćemo razviti optimalno rješenje za vas.',
 
         'Being specialized in the design and construction of electrical panels means that our company has expertise in creating customized electrical control panels that are specifically tailored to meet the needs of commercial and industrial plants:': 'Specijalizacija za dizajn i izradu električnih panela znači da naša kompanija ima stručnost u kreiranju prilagođenih električnih kontrolnih panela koji su specifično prilagođeni potrebama komercijalnih i industrijskih postrojenja:',
 
@@ -323,7 +323,6 @@ document.addEventListener('DOMContentLoaded', function() {
         'Residential & commerical building "GREEN LEVEL" (27.000m2), Podgorica, Montenegro':'Stambeno-poslovna zgrada "GREEN LEVEL" (27.000m2), Podgorica, Crna Gora',
         'RUSNANO Headquarters, Moscow, Russian Federation':'Stambeno-poslovna zgrada "Sjedište ROSNANO, Moskva, Ruska Federacija',
         'Luxurious 5* main building - Hotel (so called "Unit C" or facility No. 13) within the tourist settlement "Smokva Bay" in Reževići, Montenegro':'Luksuzni hotel kategorije 5* - Glavni objekat (takozvana "lamela C" ili objekat br. 13) u okviru turističkog kompleksa "Smokva Bay", Reževići, Crna Gora',
-
         'We design our own control panel/switchgear units in-house. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).': 'Mi dizajniramo naše sopstvene kontrolne panele/jedinice za razvod u kući. U tu svrhu naši električni inženjeri koriste EPLAN Electric P8 CAE alat. Nakon stvarne faze električnog dizajna, 3D strukturni dizajn se takođe implementira u Pro Panel, kao i Eaton-ov ili ABB-ov softver za konfiguraciju i cenu koji omogućava našim stručnjacima da dizajniraju, konfigurišu i izračunaju trošak sklopova niskonaponskih razvodnih ormana (Eaton Configurator xEnergy, ABB e-Design).',
 };
 
@@ -336,6 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to perform translation
     function translatePageToSerbian() {
         translateNode(document.body);
+        localStorage.setItem('selectedLanguage', 'srb'); // Save language choice
     }
 
     function translateNode(node) {
@@ -349,68 +349,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-// Event listener for clicking on ENG link in navbar
-    const srbLink = document.querySelector('#srbLink');
-    srbLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        translatePageToSerbian();
-    });
-
-// Event listener for clicking on SRB link in navbar
-    const engLink = document.querySelector(' #engLink');
-    engLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        // Implement the logic to revert to English
-        // For simplicity, let's assume there's a function called revertToEnglish() for this purpose
-        revertToEnglish();
-    });
-
-// Event listener for clicking on ENG link in burger menu
-    const srbLinkBurger = document.querySelector('#burgerDropDown #srbBurgerLink ');
-    srbLinkBurger.addEventListener('click', function(event) {
-        event.preventDefault();
-        translatePageToSerbian();
-    });
-
-// Event listener for clicking on SRB link in burger menu
-    const engLinkBurger = document.querySelector('#burgerDropDown #engBurgerLink');
-    engLinkBurger.addEventListener('click', function(event) {
-        event.preventDefault();
-        // Implement the logic to revert to English
-        // For simplicity, let's assume there's a function called revertToEnglish() for this purpose
-        revertToEnglish();
-    });
-
     function revertToEnglish() {
-        // You need to implement the logic to revert to English here
-        // For demonstration purposes, let's just reload the page
-        location.reload();
+        localStorage.setItem('selectedLanguage', 'eng'); // Save language choice
+        location.reload(); // Reload to reset text
     }
 
-    function resetSlider() {
-        slider.appendChild(slider.firstElementChild.cloneNode(true));
+    // Event Listeners
+    document.querySelector('#srbLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        translatePageToSerbian();
+    });
+
+    document.querySelector('#engLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        revertToEnglish();
+    });
+
+    document.querySelector('#burgerDropDown #srbBurgerLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        translatePageToSerbian();
+    });
+
+    document.querySelector('#burgerDropDown #engBurgerLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        revertToEnglish();
+    });
+
+    // Check and apply stored language preference on page load
+    if (localStorage.getItem('selectedLanguage') === 'srb') {
+        translatePageToSerbian();
     }
 
-    function resetSliderRemove() {
-        slider.removeChild(slider.firstElementChild);
-        slider.appendChild(slider.firstElementChild.cloneNode(true));
-    }
 
-    let slider = document.querySelector('.slider');
 
-// Function to reset the slider after the animation ends
-    function resetSliderAnimation() {
 
-        resetSliderRemove();
 
-    }
-
-// Add animation end event listener to reset the slider
-    slider.addEventListener('animationiteration', resetSliderAnimation);
-
-    function resetSlider2() {
-        slider2.appendChild(slider2.firstElementChild.cloneNode(true));
-    }
 
     function resetSliderRemove2() {
         slider2.removeChild(slider2.firstElementChild);
@@ -430,8 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('animationiteration', resetSliderAnimation2);
 
 // Initial reset
-    resetSlider();
-resetSlider2()
+
 
 
 
