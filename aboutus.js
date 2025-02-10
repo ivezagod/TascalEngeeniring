@@ -380,10 +380,26 @@ document.addEventListener('DOMContentLoaded', function() {
         translatePageToSerbian();
     }
 
+    function resetSliderRemove() {
+        slider.removeChild(slider.firstElementChild);
+        slider.appendChild(slider.firstElementChild.cloneNode(true));
+    }
 
+    let slider = document.querySelector('.slider');
 
+// Function to reset the slider after the animation ends
+    function resetSliderAnimation() {
 
+        resetSliderRemove();
 
+    }
+
+// Add animation end event listener to reset the slider
+    slider.addEventListener('animationiteration', resetSliderAnimation);
+
+    function resetSlider2() {
+        slider2.appendChild(slider2.firstElementChild.cloneNode(true));
+    }
 
     function resetSliderRemove2() {
         slider2.removeChild(slider2.firstElementChild);
@@ -403,7 +419,8 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('animationiteration', resetSliderAnimation2);
 
 // Initial reset
-
+    resetSlider();
+resetSlider2()
 
 
 
@@ -467,6 +484,33 @@ document.addEventListener('DOMContentLoaded', function() {
     generatePagination();
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var circle = document.querySelector('.circle');
+    var words = document.querySelector('.words');
+    var navbar = document.getElementById('navbar');
+    var scrollPosition = window.scrollY;
+
+    // Add animation class to circle and words on page load
+    circle.classList.add('show');
+    words.classList.add('show');
+
+    // Update navbar on scroll
+    window.addEventListener('scroll', function() {
+        scrollPosition = window.scrollY;
+
+        if (scrollPosition > 150) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-[#192436]');
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('bg-[#192436]');
+            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('scrolled');
+        }
+    });
+});
+
 
 
 
