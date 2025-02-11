@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         "HOME": "POČETNA",
         "BROCHURE": "BROŠURA",
-        "ELECTRICAL SYSTEM DESIGN": "PROJEKTOVANJE ELEKTROENERGETSKIH SISTEMA",
+        "ELECTRICAL SYSTEM DESIGN": "PROJEKTOVANJE ",
         "ELECTRICAL SYSTEMS DESIGN": "PROJEKTOVANJE",
-        "Electrical system design": "Projektovanje elektroenergetskih sistema",
+        "Electrical system design": "Projektovanje svih sistema i instalacija jake i slabe struje",
         "COMMISSIONING & STARTUP": "TESTIRANJE I PUŠTANJE U RAD",
         "ABOUT US": "O NAMA",
         "SERVICES": "USLUGE",
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Consulting": "Konsultacije",
         'PROGRAMMING':'PROGRAMIRANJE',
         "Maintenance":"Održavanje objekata",
-        "TASCAL ENGINEERING is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.": "TASCAL ENGINEERING je firma koja se bavi projektovanjem i izvođenjem svih elektroinstalacija jake i slabe struje, programiranjem i puštanjem u rad IT sistema, tehničkih sigurnosnih sistema i automatskih kontrolno-upravljačkih sistema (EMS, BMS, RMS) u komercijalnoj izgradnji i industriji.\n",
+        "TASCAL ENGINEERING is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.": "TASCAL ENGINEERING je firma koja se bavi projektovanjem i izvođenjem svih elektroinstalacija jake i slabe struje, programiranjem i puštanjem u rad IT sistema, tehničkih sigurnosnih sistema i automatskih kontrolno-upravljačkih sistema (EMS, BMS, RMS) u komercijalnoj izgradnji i industriji.",
         "We are registered for production and have our own plant for the production of all types of low-voltage switchgear, metering-distribution and specific technological, control management cabinets (DDC, MCC).": "Registrovani smo za proizvodnju i imamo sopstvenu radionicu za proizvodnju svih vrsta niskonaponskih razvodnih ormara, mjerno-distributivnih i specifičnih tehnoloških, kontrolno-upravljačkih ormara (DDC, MCC).\n",
         "The long-term experience of our experts is a guarantee that we have the necessary knowledge to guide you through the individual stages or the entire process of planning, designing and the very realization of specific technical solutions.": "Dugogodišnje iskustvo naših stručnjaka garantuje da posjedujemo potrebno znanje da vas provedemo kroz pojedinačne faze ili čitav proces planiranja, dizajniranja i same realizacije specifičnih tehničkih rješenja.",
         "MORE DETAILS": "VIŠE DETALJA",
@@ -169,6 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "'Yan-Ron' Business Centre, Moscow, Russian Federation":"Biznis centar 'Yan-Ron', Moskva, Ruska Federacija",
         "'Stanislavsky Factory' Business Center, Moscow, Russian Federation":"Biznis Centar 'Stanislavsky Factory', Moskva, Ruska Federacija",
         "SRV’s Shopping Center \"4DAILY\", Moscow Region, Russia":"Tržni centar \"4DAILY\", Moskovska Oblast, Ruska Federacija",
+        "International Baccalaureate®️ School President, Moscow, Russian Federation":"Internacionalna Baccalaureate®️ škola 'Prezident', Moskva, Ruska Federacija",
+        "Volkswagen Group RUS SKD2 Plant, Kaluga, Russia":"Volkswagen Group 'RUS SKD2' fabrika, Kaluga, Ruska Federacija",
 
 
         'We can provide valuable assistance in the process of obtaining reliable and objective information before making a decision regarding a certain investment, but also later in the course of its realization.': 'Možemo vam pružiti vrijednu pomoć u procesu dobijanja pouzdanih i objektivnih informacija prije donošenja odluke o određenoj investiciji, kao i u kasnijim fazama, tokom njene realizacije.\n',

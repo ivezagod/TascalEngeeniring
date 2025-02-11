@@ -30,8 +30,10 @@ export default {
             },
             fontFamily:{
                 'main':['montserrat']
-            }
-        },
+            },
+
+
+},
     },
     plugins: [],
 }
