@@ -133,7 +133,7 @@
 
     </div>
 
-    <div class="sketchfab-embed-wrapper "> <iframe title="Exemplary Cabinet" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/24a36e7eb13c42dca4b4e0c82ba9d481/embed"> </iframe> </div>
+<!--   -->
 
 
 
@@ -141,11 +141,11 @@
 
 
 
-    <div class="bg-red-500 w-full h-full my-[50px]">
-        <img src="./media/services/zasajt2.png" alt="">
-    </div>
+<!--    <div class="bg-red-500 w-full h-full my-[50px]">-->
+<!--        <img src="./media/services/zasajt2.png" alt="">-->
+<!--    </div>-->
 
-    <h1 class="text-white xl:text-3xl text-4xl font-bold mt-[30px] mb-[30px]">BIM Model of our Electrical Cabinet</h1>
+<!--    <h1 class="text-white xl:text-3xl text-4xl font-bold mt-[30px] mb-[30px]">BIM Model of our Electrical Cabinet</h1>-->
 
 <!--    <div class="w-full h-[500px] my-[50px]" id="three-container"></div>-->
 
@@ -155,70 +155,7 @@
 
 
 
-<!--    <script>-->
-<!--        const container = document.querySelector('#three-container'); // Use specific ID for container-->
 
-<!--        // Set up the scene, camera, and renderer-->
-<!--        const scene = new THREE.Scene();-->
-<!--        const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);-->
-<!--        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });  // Enable antialias for smoother lines-->
-<!--        renderer.setClearColor(0x000000, 0);-->
-
-<!--        // Set the canvas size to match the container-->
-<!--        renderer.setSize(container.offsetWidth, container.offsetHeight);-->
-<!--        renderer.setPixelRatio(window.devicePixelRatio); // Ensure better resolution on high DPI screens-->
-<!--        container.appendChild(renderer.domElement);-->
-
-<!--        // Add controls to move the object-->
-<!--        const controls = new THREE.OrbitControls(camera, renderer.domElement);-->
-<!--        controls.enableDamping = true;-->
-<!--        controls.dampingFactor = 0.05;-->
-<!--        controls.enableZoom = true;-->
-
-<!--        // Load the GLB file-->
-<!--        const loader = new THREE.GLTFLoader();-->
-<!--        loader.load('/3D/3dModel.glb', (gltf) => {-->
-<!--            const object = gltf.scene;-->
-
-<!--            // Center the object-->
-<!--            const box = new THREE.Box3().setFromObject(object);-->
-<!--            const center = box.getCenter(new THREE.Vector3());-->
-<!--            object.position.sub(center);  // Adjust the position to center the object-->
-<!--            scene.add(object);-->
-<!--        });-->
-
-<!--        // Add an ambient light for overall illumination-->
-<!--        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light-->
-<!--        scene.add(ambientLight);-->
-
-<!--        // Add a directional light to create shadows and highlights-->
-<!--        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);-->
-<!--        directionalLight.position.set(5, 10, 7.5); // Position the light-->
-<!--        directionalLight.castShadow = true;        // Enable shadow casting if needed-->
-<!--        scene.add(directionalLight);-->
-
-<!--        // Set camera position-->
-<!--        camera.position.z = 1;-->
-
-<!--        // Animation loop-->
-<!--        function animate() {-->
-<!--            requestAnimationFrame(animate);-->
-<!--            controls.update();-->
-<!--            renderer.render(scene, camera);-->
-<!--        }-->
-
-<!--        // Initial animation-->
-<!--        animate();-->
-
-<!--        // Resize handling (if the container size changes dynamically)-->
-<!--        window.addEventListener('resize', () => {-->
-<!--            // Update the canvas size to match the container-->
-<!--            renderer.setSize(container.offsetWidth, container.offsetHeight);-->
-<!--            renderer.setPixelRatio(window.devicePixelRatio); // Update pixel ratio on resize for better resolution-->
-<!--            camera.aspect = container.offsetWidth / container.offsetHeight;-->
-<!--            camera.updateProjectionMatrix();-->
-<!--        });-->
-<!--    </script>-->
 
 
 
