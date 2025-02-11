@@ -165,6 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "SATISFIED CLIENTS": "ZADOVOLJNIH KLIJENTA",
         "Podgorica, Montenegro":"Podgorica Crna Gora",
         "Ljubljana, Slovenia":"Ljubljana, Slovenija",
+        "'Mirax Group Office Space' - Federation Tower 'East', Moscow, Russian Federation":"'Mirax Group kancelarijski prostor' - 'istočni' Federation Tower, Moskva, Ruska Federacija",
+        "'Yan-Ron' Business Centre, Moscow, Russian Federation":"Biznis centar 'Yan-Ron', Moskva, Ruska Federacija",
+        "'Stanislavsky Factory' Business Center, Moscow, Russian Federation":"Biznis Centar 'Stanislavsky Factory', Moskva, Ruska Federacija",
+        "SRV’s Shopping Center \"4DAILY\", Moscow Region, Russia":"Tržni centar \"4DAILY\", Moskovska Oblast, Ruska Federacija",
 
 
         'We can provide valuable assistance in the process of obtaining reliable and objective information before making a decision regarding a certain investment, but also later in the course of its realization.': 'Možemo vam pružiti vrijednu pomoć u procesu dobijanja pouzdanih i objektivnih informacija prije donošenja odluke o određenoj investiciji, kao i u kasnijim fazama, tokom njene realizacije.\n',
