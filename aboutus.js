@@ -163,6 +163,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "YEARS OF EXPERIENCE": "GODINA ISKUSTVA",
         "FINISHED PROJECTS": "ZAVRŠENIH PROJEKTA",
         "SATISFIED CLIENTS": "ZADOVOLJNIH KLIJENTA",
+        "Podgorica, Montenegro":"Podgorica Crna Gora",
+        "Ljubljana, Slovenia":"Ljubljana, Slovenija",
 
 
         'We can provide valuable assistance in the process of obtaining reliable and objective information before making a decision regarding a certain investment, but also later in the course of its realization.': 'Možemo vam pružiti vrijednu pomoć u procesu dobijanja pouzdanih i objektivnih informacija prije donošenja odluke o određenoj investiciji, kao i u kasnijim fazama, tokom njene realizacije.\n',
