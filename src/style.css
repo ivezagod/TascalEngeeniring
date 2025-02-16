@@ -303,54 +303,58 @@ body {
 
 /* Picture Slider Styles */
 .picture-slider {
-    position: fixed;
+    display: none; /* Ensure it's hidden initially */
+    position: fixed; /* To cover the whole viewport */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.slider-image {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    width: 80%; /* You can adjust this percentage to fit your needs */
+    height: 80%; /* Keeps the image within the viewport */
+
 }
 
-.picture-slider.active {
-    visibility: visible;
-    opacity: 1;
+.slider-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* This ensures the image scales proportionally within the available space */
+    margin-top: 110px;
 }
 
-.picture-slider img {
-    max-width: 90%;
-    max-height: 80%;
-}
-
-.picture-slider .prev,
-.picture-slider .next,
-.picture-slider .close {
+button {
     position: absolute;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
     border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.picture-slider .prev {
-    left: 5%;
+.prev {
+    left: 10px;
 }
 
-.picture-slider .next {
-    right: 5%;
-}
-
-.picture-slider .close {
-    top: 10px;
+.next {
     right: 10px;
 }
+
+.close {
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+}
+
 
 .gallery-img {
     cursor: pointer;
