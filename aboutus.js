@@ -499,6 +499,7 @@ resetSlider2()
 
 });
 
+
 document.addEventListener('DOMContentLoaded', function() {
     var circle = document.querySelector('.circle');
     var words = document.querySelector('.words');
@@ -523,7 +524,96 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     });
+
 });
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+const images = document.querySelectorAll(".gallery-img");
+const navbar = document.getElementById("navbar");
+const body = document.body;
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modalImg.src = img.src;
+        body.style.overflow = "hidden"; // Disable scrolling
+        navbar.style.display = "none"; // Hide navbar
+    });
+});
+
+closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    body.style.overflow = "auto"; // Enable scrolling again
+    navbar.style.display = "block"; // Show navbar
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target !== modalImg) {
+        modal.classList.add("hidden");
+        body.style.overflow = "auto"; // Enable scrolling again
+        navbar.style.display = "block"; // Show navbar
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".gallery .image-container img"); // Ensure you replace `.image-container` with the correct parent class
+
+    const slider = document.querySelector(".picture-slider");
+    const sliderImg = slider.querySelector("img");
+    const closeBtn = slider.querySelector(".close");
+    const nextBtn = slider.querySelector(".next");
+    const prevBtn = slider.querySelector(".prev");
+
+    let currentIndex = 0;
+
+    // Check if images are being selected
+    console.log("Images selected:", images);  // Debugging line
+
+    // Open slider when clicking an image
+    window.addEventListener("DOMContentLoaded", (event) => {
+        const images = document.querySelectorAll(".gallery img");
+        console.log("Gallery images found:", images);
+        images.forEach((img) => {
+            img.addEventListener("click", function () {
+                const slider = document.querySelector(".picture-slider");
+                const sliderImg = slider.querySelector("img");
+                sliderImg.src = this.src;
+                slider.style.display = "flex";
+            });
+        });
+    });
+
+
+
+    // Close slider
+    closeBtn.addEventListener("click", function () {
+        slider.style.display = "none";
+    });
+
+    // Next Image
+    nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % images.length;
+        sliderImg.src = images[currentIndex].src;
+    });
+
+    // Previous Image
+    prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        sliderImg.src = images[currentIndex].src;
+    });
+
+    // Close slider when clicking outside the image
+    slider.addEventListener("click", function (event) {
+        if (event.target === slider) {
+            slider.style.display = "none";
+        }
+    });
+});
+
+
+
 
 
 
