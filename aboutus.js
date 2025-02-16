@@ -41,22 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerServicesLink = document.getElementById('burgerServicesLink');
-    const burgerServicesDropdown = document.getElementById('burgerServicesDropdown');
 
-    burgerServicesLink.addEventListener('click', function() {
-        burgerServicesDropdown.classList.toggle('hidden');
-    });
-
-    // Close dropdown when clicking outside of it
-    document.addEventListener('click', function(event) {
-        const target = event.target;
-        if (!target.closest('#burgerServicesDropdown') && !target.closest('#burgerServicesLink')) {
-            burgerServicesDropdown.classList.add('hidden');
-        }
-    });
-});
 
 function resetSliderRemove() {
     slider.removeChild(slider.firstElementChild);
@@ -156,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     displayReferences(currentPage);
     generatePagination();
 });
+
 
 
 

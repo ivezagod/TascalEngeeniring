@@ -1,4 +1,4 @@
-document.querySelectorAll("img").forEach(img => {
+document.querySelectorAll(".image-container img").forEach(img => {
     img.addEventListener("click", function() {
         const body = document.body;
         const navbar = document.getElementById("navbar");

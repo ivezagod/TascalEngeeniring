@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var navbar = document.getElementById('navbar');
-    var scrollPosition = window.scrollY;
+    const navbar = document.getElementById('navbar');
+    let scrollPosition = window.scrollY;
 
     // Update navbar on scroll
     window.addEventListener('scroll', function() {
@@ -16,34 +16,43 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
     const servicesLink = document.getElementById('servicesLink');
     const servicesDropdown = document.getElementById('servicesDropdown');
+    const burgerServicesLink = document.getElementById('burgerServicesLink');
+    const burgerServicesDropdown = document.getElementById('burgerServicesDropdown');
 
-    servicesLink.addEventListener('click', function() {
+    // Toggle the services dropdown on desktop
+    servicesLink.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent event bubbling to document
         servicesDropdown.classList.toggle('hidden');
     });
 
-    // Close dropdown when clicking outside of it
+    // Toggle the services dropdown on mobile
+    burgerServicesLink.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent event bubbling to document
+        burgerServicesDropdown.classList.toggle('hidden');
+    });
+
+    // Close dropdowns when clicking outside of them
     document.addEventListener('click', function(event) {
         const target = event.target;
         if (!target.closest('#servicesDropdown') && !target.closest('#servicesLink')) {
             servicesDropdown.classList.add('hidden');
         }
+        if (!target.closest('#burgerServicesDropdown') && !target.closest('#burgerServicesLink')) {
+            burgerServicesDropdown.classList.add('hidden');
+        }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
+    // Toggle the burger menu dropdown
     const burgerMenu = document.getElementById('burgerMenu');
     const burgerDropDown = document.getElementById('burgerDropDown');
-
     burgerMenu.addEventListener('click', function() {
         burgerDropDown.classList.toggle('hidden');
     });
 
-    // Close dropdown when clicking outside of it
+    // Close burger menu when clicking outside of it
     document.addEventListener('click', function(event) {
         const target = event.target;
         if (!target.closest('#burgerDropDown') && !target.closest('#burgerMenu')) {
