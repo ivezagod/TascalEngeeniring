@@ -384,4 +384,20 @@ button {
     display: none;
 }
 
+.reference-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.reference-picture img {
+    max-width: 80%; /* Adjust this percentage as needed */
+    height: auto;  /* Keeps the aspect ratio */
+    margin-bottom: 10px; /* Adds space between images */
+}
+.reference-picture p {
+    max-width: 70%; /* Adjust this percentage as needed */
+    text-align: center;
+}
+
 
